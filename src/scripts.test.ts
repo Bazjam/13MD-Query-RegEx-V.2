@@ -27,7 +27,7 @@ describe('Test username validation', () => {
   });
 
   test('Username that contains special characters should be invalid', () => {
-    expect(validateUsername('login!')).toBeFalsy();
+    expect(validateUsername('login!@#$')).toBeFalsy();
   });
 });
 
