@@ -18,7 +18,7 @@ describe('Test username validation', () => {
   });
 
   test('Username with 51 characters should be invalid', () => {
-    expect(validateUsername('aksirjtkgjfDmkAslPrJkLerJklPlOvJkLjQWasdPOIJLAKJsak')).toBeFalsy();
+    expect(validateUsername('cksirjtkgjfDmkAslPrJkLerJklPlOvJkLjQWasdPOIJLAKJsak')).toBeFalsy();
   });
 
   test('Username that contains digits should be invalid', () => {
