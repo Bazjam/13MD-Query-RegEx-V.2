@@ -4,7 +4,6 @@ import {validateEmail} from './scripts';
 import {validatePassword} from './scripts';
 
 
-
 describe('Test username validation', () => {
   test('4 letter username should be valid', () => {
     expect(validateUsername('aaaa')).toBeTruthy();
@@ -32,6 +31,7 @@ describe('Test username validation', () => {
 });
 
 describe('Test user email validation', () => {
+  
   test('Email in normal pattern should be valid', () => {
     expect(validateEmail('asdgas@as.lv')).toBeTruthy();
   });

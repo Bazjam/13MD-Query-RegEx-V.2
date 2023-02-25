@@ -1,8 +1,3 @@
-
-// var jsdom = require('jsdom');
-// const $ = require('jquery')(new jsdom.JSDOM().window);
-
-
 const imgUsername = $("[data-user-green-check-box]");
 const username = $("[data-input-username]");
 const usernameMassage = $("[data-username-massage]");
@@ -61,19 +56,18 @@ const validateUsername = (info: string) => {
   const regex = new RegExp(validRegex);
   return regex.test(info);
 };
+
 const validateEmail = (info: string) => {
   const validRegex =
     /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
   const regex = new RegExp(validRegex);
   return regex.test(info);
 };
+
 const validatePassword = (info: string): any => {
   const validRegex = /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{7,})\S$/;
   const regex = new RegExp(validRegex);
   return regex.test(info);
 };
-
-// module.exports = validateUsername;
-// export default validateUsername;
 
 export {validateUsername, validateEmail, validatePassword};
